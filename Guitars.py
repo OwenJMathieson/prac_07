@@ -4,7 +4,7 @@ from prac_07.Guitar import Guitar
 def main():
     guitars = []
 
-    print("My guitars!")
+    print("My Guitars:")
     name = input("Name: ")
     while name != "":
         year = int(input("Year: "))
