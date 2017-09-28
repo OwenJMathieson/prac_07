@@ -1,5 +1,5 @@
-CURRENT_YEAR = 2017
-VINTAGE_AGE = 50
+year = 2017
+vintage_age = 50
 
 
 class Guitar:
@@ -13,10 +13,10 @@ class Guitar:
         return "{} ({}) : ${:,.2f}".format(self.name, self.year, self.cost)
 
     def get_age(self):
-        return CURRENT_YEAR - self.year
+        return year - self.year
 
     def is_vintage(self):
-        return self.get_age() >= VINTAGE_AGE
+        return self.get_age() >= vintage_age
 
     def __lt__(self, other):
         return self.year < other.year
